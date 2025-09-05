@@ -27,7 +27,7 @@ h2 {
 }
 
 .employee-table thead {
-  background-color: #009879; 
+  background-color: #009879;
   color: #ffffff;
 }
 
@@ -39,13 +39,26 @@ h2 {
   background-color: #f9f9f9;
 }
 
+.loading {
+  text-align: center;
+  padding: 16px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+/* Pagination */
 .pagination {
   margin-top: 20px;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
+  align-items: center;
 }
 
+.pagination span ,
 .pagination button {
   padding: 8px 14px;
   border: none;
@@ -53,19 +66,19 @@ h2 {
   cursor: pointer;
   font-size: 14px;
   transition: all 0.2s ease;
-}
-
-.pagination button:hover:not(:disabled) {
-  background-color: #007f63;
-  color: #fff;
-}
-
-.pagination button.active {
   background-color: #009879;
-  color: #fff;
+  color: white;
 }
 
 .pagination button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+
+.current-page {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  background-color: #f0f0f0;
 }

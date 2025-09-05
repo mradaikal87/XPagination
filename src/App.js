@@ -1,5 +1,5 @@
-import "./App.css";
 import React, { useEffect, useState } from "react";
+import "./App.css";
 
 export default function App() {
   const [data, setData] = useState([]);
@@ -83,7 +83,7 @@ export default function App() {
               Previous
             </button>
 
-            <button className="active">{currentPage}</button>
+            <span className="active">{currentPage}</span>
 
             <button
               onClick={() => goToPage(currentPage + 1)}

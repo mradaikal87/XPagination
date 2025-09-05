@@ -78,7 +78,7 @@ export default function App() {
           <div className="pagination">
             <button
               onClick={() => goToPage(currentPage - 1)}
-              disabled={currentPage === 1}
+              // disabled={currentPage === 1}
             >
               Previous
             </button>

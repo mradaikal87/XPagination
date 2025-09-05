@@ -83,7 +83,7 @@ export default function App() {
               Previous
             </button>
 
-          <button className="active">{currentPage}</button>
+            <button className="active">{currentPage}</button>
 
             <button
               onClick={() => goToPage(currentPage + 1)}
